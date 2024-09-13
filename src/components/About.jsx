@@ -12,6 +12,10 @@ import { SiGithub } from "react-icons/si";
 import { SiBitbucket } from "react-icons/si";
 import { SiDocker } from "react-icons/si";
 import { SiBootstrap } from "react-icons/si";
+import { SiDotnet } from "react-icons/si";
+import { TbBrandCSharp } from "react-icons/tb";
+
+
 
 
 
@@ -20,15 +24,15 @@ const About = () =>{
 
 
     return(
-        <div className="w-screen h-screen min-h-[650px] flex flex-col gap-4 items-center justify-center py-10 sm:mb-10 bg-neutral-50 my-44">
-        <div className="flex flex-col items-center gap-4 justify-center">
+        <div className="w-screen min-h-[800px] flex flex-col gap-4  items-center justify-center bg-neutral-50">
+        <div className="flex flex-col items-center gap-4 justify-center ">
          {/* {about section} */}
-          <div className=" mx-8 p-4 md:w-[1000px] w-[400px] text-justify text-center ">
+          <div className="  p-4 md:w-[1000px] w-[400px] text-justify text-center">
             
-            <h1 data-aos="fade-down"  data-aos-once="true" className="text-3xl font-bold mb-4 text-center text-slate-700">
+            <h1 data-aos="fade-down"  data-aos-once="true" className="sm:text-xl md:text-3xl font-bold mb-4 text-center text-slate-700">
              ABOUT ME
             </h1>
-            <p data-aos="fade-up" data-aos-delay="200"  data-aos-once="true" >
+            <p data-aos="fade-up" data-aos-delay="200"  data-aos-once="true" className=' sm:text-base'>
             Results-driven Web Developer with 3+ years of experience in designing, developing, and maintaining web applications. 
             Proficient in both front-end and back-end technologies, with a strong ability to troubleshoot, problem-solve, and optimise code for efficiency.
              Seeking to leverage expertise in full stack development to contribute to innovative projects and drive organisational success.
@@ -44,9 +48,9 @@ const About = () =>{
             data-aos-once="true"
             className=' border-2 border-black p-4 text-center rounded-xl w-[300px]'>
 
-                <h1 className='font-bold text-3xl underline mb-4 text-stone-600'> Experiences</h1>
-                <p className='text-slate-600'> 3+ Years of Experience </p>
-                <p className='text-slate-600'> Full Stack Developer</p>
+                <h1 className='font-bold sm:text-xl text-3xl underline mb-4 text-stone-600'> Experiences</h1>
+                <p className='text-slate-700'> 3+ Years of Experience </p>
+                <p className='text-slate-700'> Full Stack Developer</p>
             </div>
 
             <div
@@ -55,17 +59,17 @@ const About = () =>{
              data-aos-delay="300"
               className=' border-2 border-black p-4 text-center rounded-xl'>
 
-<h1 className='font-bold text-3xl underline mb-4 text-stone-600'> Educaton</h1>
-<p className='text-slate-600'> Bachelor's in Information Technology </p>
-<p className='text-slate-600'>Federation University</p>
+<h1 className='font-bold text-xl text-3xl underline mb-4 text-stone-600'> Educaton</h1>
+<p className='text-slate-700'> Bachelor's in Information Technology </p>
+<p className='text-slate-700'>Federation University</p>
 
 </div>
 
           </div>
           </div>
           {/* {skills} */}
-          <div className='mt-24 text-center flex flex-col gap-4'>
-            <h1   data-aos="zoom-up"  data-aos-once="true" className='font-bold text-3xl text-stone-600'>
+          <div className='p-10 text-center flex flex-col gap-4 pl-12'>
+            <h1   data-aos="zoom-up"  data-aos-once="true" className='font-bold sm:text-2xl text-stone-600'>
                 Technical Skills
                 </h1>
                 <div  className='flex flex-wrap sm:flex-row gap-7 text-3xl mb-3'>
@@ -82,6 +86,9 @@ const About = () =>{
                 <p data-aos="zoom-out-right" data-aos-delay="850"   data-aos-once="true" className='text-blue-500'><SiBitbucket /></p>
                 <p data-aos="zoom-out-right" data-aos-delay="900"   data-aos-once="true" className='text-blue-500'><SiDocker /></p>
                 <p data-aos="zoom-out-right" data-aos-delay="1000"   data-aos-once="true" className='text-purple-600'><SiBootstrap /></p>
+                <p data-aos="zoom-out-right" data-aos-delay="1000"   data-aos-once="true" className='text-purple-900'><TbBrandCSharp /></p>
+                <p data-aos="zoom-out-right" data-aos-delay="1000"   data-aos-once="true" className='text-purple-900'><SiDotnet /></p>
+
                 </div>
 
                

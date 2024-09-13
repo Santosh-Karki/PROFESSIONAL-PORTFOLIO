@@ -10,7 +10,7 @@ const Contact = () => {
     <div
       data-aos="zoom-in"
       data-aos-once="true"
-      className="w-screen h-[300px] my-20 bg-neutral-100 text-black items-center justify-center "
+      className="w-screen md:min-h-[400px] h-[250px] bg-neutral-100 text-black items-center justify-center "
    
     >
       <div className="container backdrop-blur-sm py-10">

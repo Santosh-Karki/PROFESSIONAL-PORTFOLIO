@@ -1,137 +1,130 @@
-import React, {useState} from "react";
-import Topic1 from '../assets/topic/affogato.png';
-import Topic2 from '../assets/topic/bookpedia.png';
-import Topic3 from '../assets/topic/essentials.png';
+
 import Book1 from "../assets/projects/afogato.png";
 import Book2 from "../assets/projects/book.png";
 import Book3 from "../assets/projects/essential.png";
-const ImageList = [
 
-  {
-    id: 3,
-    img: Book3,
-    topic: Topic3,
-    title: "ESSENTIALS",
-    skills: "React, JavaScript, Tailwind CSS",
-    description:
-    "Responsive Online Clothing Brand ",
-    link:"https://zesty-puffpuff-093811.netlify.app/",
-    github:"https://github.com/Santosh-Karki/Essentials-E-commerce-website"
-    },
-  
-
-  {
-    id: 1,
-    img: Book1,
-    topic: Topic1,
-    title: "AFFOGATO",
-    skills: "React, JavaScript, Node.js, Express.js, MongoDB, Mongoose, REST API, Tailwind CSS",
-    description:
-      "Responsive Online Cafe Website",
-      link: "https://affogato.netlify.app/",
-      github:"https://github.com/Santosh-Karki/Restaurant"
-  },
-  {
-    id: 2,
-    img: Book2,
-    topic: Topic2,
-    skills: "React, JavaScript, Tailwind CSS",
-    title: "BOOKPEDIA",
-    description:
-    "Responsive Online BookStore",
-    link: "https://tranquil-alfajores-baba3a.netlify.app/",
-    github:"https://github.com/Santosh-Karki/BookPedia"
-  },
-  
-  
-];
-
-const Home = () => {
-  const [imageId, setImageId] = useState(Book3);
-  const [title, setTitle] = useState("ESSENTIALS");
-  const [link, setLink] = useState("https://zesty-puffpuff-093811.netlify.app/");
-  const [github, setGithub] = useState("https://github.com/Santosh-Karki/Essentials-E-commerce-website")
 
  
-
+const Home = () => {
   return (
     <>
       <div
-        className="w-screen h-screen min-h-[1000px] bg-neutral-100 flex flex-col justify-center items-center duration-200"
+        className="w-screen  min-h-[600px] bg-gray-200 flex flex-col p-16 justify-center items-center duration-200"
     
       >
-   <h1 data-aos="fade-down"  data-aos-once="true" className="text-4xl  text-slate-700 font-bold mb-24 "> PROJECTS</h1>
+   <h1 data-aos="fade-down"  data-aos-once="true" className="text-4xl text-slate-700 font-bold mb-16 "> PROJECTS</h1>
 
         
-        <div className="container pb-2 sm:pb-0">
+<div className ="flex flex-col md:gap-16  gap-6 w-full">
+  <div className = "grid grid-cols-1 md:grid-cols-2 items-center ">
+    <div className="  h-full  md:p-24 text-justify md:pt-12">
+    <h1 className="font-bold text-xl  ">ESSENTIALS
+      </h1>
+      <p> Developed a full-stack clothing e-commerce platform that allows users to browse collections, 
+        filter products, add items to their shopping cart, and complete purchases securely.</p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 ">
+      <div>
+        <strong> Tech Stack: </strong> <p className="italic"> React, JavaScript, Node.js, Express.js, MongoDB, Tailwind CSS</p>
+        
+      </div>
+    </div>
+    <div className=" flex flex-col gap-2 justify-center items-center p-6 h-full">
+    <img data-aos="flip-right" data-aos-delay="300"  data-aos-once="true" src={Book3}
+    className="w-[400px] h-[200px] sm:h-[250px] rounded-3xl sm:scale-125 object-contain"/>
 
-          <div className="min-h-[450px] sm:min-h-[450px]  flex flex-col justify-center items-center relative order-1 sm:order-1 ">
-
-             <div className="flex flex-col justify-center  -translate-y-12">
-               {ImageList.map((item) => (
-                 <div key={item.id}>
-                  <img
-                
-                data-aos="zoom-out-right" 
-                data-aos-delay="200"
-                data-aos-once="true"
-                   src={item.topic}
-                   onClick={() => {
-                     setImageId(
-                       item.img
-                     );
-                     setTitle(item.title);
-                     setLink(item.link);
-                     setGithub(item.github)
-                  
-                     
-
-                   }}
-                  
-                   className="max-w-[200px] h-[100px] object-contain cursor-pointer hover:scale-110 duration-200"
-                 />
-                 <h1 data-aos="zoom-out-right" data-aos-delay="300"  data-aos-once="true" className="-translate-y-8 font-bold"> {item.description} </h1>
-                 <p data-aos="zoom-out-right" data-aos-delay="300"   data-aos-once="true" className="text-sm -translate-y-8 "> <strong>Skills:</strong> {item.skills}</p>
-                 </div>
-               ))}
-             
-             </div>
-           </div>
-
-              {/* {Project card} */}
-            <div
-              
-              className="flex flex-col rounded-lg justify-center p-4  text-center border-2 border-slate-400  sm:text-left order-2 sm:order-2"
-            >
-  
-               <div className=" flex flex-col justify-center items-center">
-                <img
-                 data-aos="flip-right" data-aos-delay="300"  data-aos-once="true"
-                  src={imageId}
-                  className="w-[400px] h-[300px] sm:h-[250px] sm:w-[450px] rounded-3xl sm:scale-125 object-contain mx-auto"
-                />
-              
-                <h1 className="font-bold text-slate-800 my-6"> {title}</h1>
 <div className="flex flex-row gap-4">
-  <a href={link} target="_blank" className="hover:scale-110 focus:outline-none focus:ring focus:ring-slate-400 duration-200">
+  <a href="https://zesty-puffpuff-093811.netlify.app/" target="_blank" className="hover:scale-110 focus:outline-none focus:ring focus:ring-slate-400 duration-200">
 <button data-aos="zoom-out-right" data-aos-delay="200"  data-aos-once="true" className="w-24 p-2 rounded-full text-md font-bold bg-white text-slate-700 border-2 border-slate-400"> Demo</button>
 </a>
-<a href={github} target="_blank" className="hover:scale-110 focus:outline-none focus:ring focus:ring-slate-400 duration-200">
+<a href="https://github.com/Santosh-Karki/Essentials-E-commerce-website" target="_blank" className="hover:scale-110 focus:outline-none focus:ring focus:ring-slate-400 duration-200">
 <button data-aos="zoom-in-left" data-aos-delay="300"   data-aos-once="true" className="w-24 p-2 rounded-full text-md font-bold bg-white text-slate-700 border-2 border-slate-400"> Github</button>
 </a>
 </div>
+    </div>
 
-              </div>
+     </div>
 
 
-           
-            </div>
-      
-            
-          </div>
-        </div>
+
+
+     <div className = "grid grid-cols-1 md:grid-cols-2 items-center ">
+
+     <div className=" flex flex-col gap-2 justify-center items-center p-6 h-full md:row-end-1 row-start-2">
+    <img data-aos="flip-right" data-aos-delay="300"  data-aos-once="true" src={Book1}
+    className="w-[400px] h-[200px] sm:h-[250px] rounded-3xl sm:scale-125 object-contain"/>
+
+<div className="flex flex-row gap-4">
+  <a href="https://affogato.netlify.app/" target="_blank" className="hover:scale-110 focus:outline-none focus:ring focus:ring-slate-400 duration-200">
+<button data-aos="zoom-out-right" data-aos-delay="200"  data-aos-once="true" className="w-24 p-2 rounded-full text-md font-bold bg-white text-slate-700 border-2 border-slate-400"> Demo</button>
+</a>
+<a href="https://github.com/Santosh-Karki/Restaurant"target="_blank" className="hover:scale-110 focus:outline-none focus:ring focus:ring-slate-400 duration-200">
+<button data-aos="zoom-in-left" data-aos-delay="300"   data-aos-once="true" className="w-24 p-2 rounded-full text-md font-bold bg-white text-slate-700 border-2 border-slate-400"> Github</button>
+</a>
+</div>
+    </div>
+
+
+    <div className="  h-full md:p-24 text-justify md:pt-12  md:row-end-2 row-start-1">
+    <h1 className="font-bold text-xl  ">AFFOGATO
+      </h1>
+      <p>  Designed and developed a full-stack restaurant app that allows customers to make reservations, browse the menu, place orders,
+          and track delivery status, with a focus on enhancing the dining experience both in-house and for takeout.</p>
+
+      <div>
+        <strong> Tech Stack: </strong> <p className="italic"> React, JavaScript, Node.js, Express.js, MongoDB, Tailwind CSS</p>
+        
+      </div>
+    </div>
+   
+
+     </div>
+
+
+
+
+
+     <div className = "grid grid-cols-1 md:grid-cols-2 items-center ">
+    <div className=" h-full md:p-24 text-justify md:pt-12">
+    <h1 className="font-bold text-xl  ">BOOKPEDIA
+      </h1>
+      <p>  Developed a full-stack web application for an online bookstore that allows users to browse books, read reviews, make purchases, 
+        and manage their personal libraries.</p>
+
+      <div>
+        <strong> Tech Stack: </strong> <p className="italic"> React, JavaScript, Node.js, Express.js, MongoDB, Tailwind CSS</p>
+        
+      </div>
+    </div>
+    <div className=" flex flex-col gap-2 justify-center items-center p-6 h-full">
+    <img data-aos="flip-right" data-aos-delay="300"  data-aos-once="true" src={Book2}
+    className="w-[400px] h-[200px] sm:h-[250px] rounded-3xl sm:scale-125 object-contain"/>
+
+<div className="flex flex-row gap-4">
+  <a href="https://tranquil-alfajores-baba3a.netlify.app/" target="_blank" className="hover:scale-110 focus:outline-none focus:ring focus:ring-slate-400 duration-200">
+<button data-aos="zoom-out-right" data-aos-delay="200"  data-aos-once="true" className="w-24 p-2 rounded-full text-md font-bold bg-white text-slate-700 border-2 border-slate-400"> Demo</button>
+</a>
+<a href="https://github.com/Santosh-Karki/BookPedia" target="_blank" className="hover:scale-110 focus:outline-none focus:ring focus:ring-slate-400 duration-200">
+<button data-aos="zoom-in-left" data-aos-delay="300"   data-aos-once="true" className="w-24 p-2 rounded-full text-md font-bold bg-white text-slate-700 border-2 border-slate-400"> Github</button>
+</a>
+</div>
+    </div>
+
+     </div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+        
+       
       </div>
     </>
   );

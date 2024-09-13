@@ -23,14 +23,14 @@ const App = () => {
   }, []);
 
   return (
-    <div className=" bg-neutral-100  duration-200">
+    <div className=" bg-neutral-200 w-full h-full m-0 p-0 overflow-x-hidden duration-200 ">
  <header>
  <Navbar  />
  </header>
     <main>
      <div id="/"> <Profile /></div> 
       <div id="about"><About /></div>
-      <div id="project"><Home /></div>
+      <div id="about"><Home /></div>
       <div id="contact"><Contact /></div>
 
       </main>

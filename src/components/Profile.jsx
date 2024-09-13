@@ -9,8 +9,8 @@ import { Link } from "react-scroll";
 
 const Profile = () => {
   return (
-    <div className="min-h-[650px] w-screen h-screen sm:w-full flex justify-center items-center ">
-      <div className="container">
+    <div className="min-h-[650px]  w-screen  sm:w-full sm:h-screen flex justify-center items-center py-24">
+      <div className="container ">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           
 
@@ -25,7 +25,7 @@ const Profile = () => {
             Ciao, I'm
             </p>
             Santosh Karki
-            <p className="text-5xl text-neutral-500 font-semibold">Full Stack developer</p>
+            <p className="text-5xl text-neutral-500 font-semibold">Full Stack Web Developer</p>
             </h1>
             <div className="flex flex-row  gap-6 mt-6">
             <a href="Santosh.Karki CV.pdf" download="Santosh.Karki CV.pdf" >
